@@ -15,7 +15,7 @@ with open("oba_market_locations.csv", "w", newline="", encoding="utf-8") as csvf
     writer.writeheader()
 
     # Find all the market divs
-    market_divs = soup.find_all('div', class_='br_item border-bottom border-eaeaea px-4 pt-4 pb-3 cursor-p events-none js-map-coordinates')
+    market_divs = soup.find_all('div', class_='js-map-coordinates')
 
     # Iterate over each market div and extract the data
     for market in market_divs:
