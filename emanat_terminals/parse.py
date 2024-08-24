@@ -1,33 +1,31 @@
 from bs4 import BeautifulSoup
-import csv
+import pandas as pd
 
 # Load the HTML file
-file_path = 'Terminal xəritəsi _ eManat.html'
-with open(file_path, 'r', encoding='utf-8') as file:
-    html_content = file.read()
+with open('terminals.html', 'r', encoding='utf-8') as file:
+    soup = BeautifulSoup(file, 'html.parser')
 
-# Parse the HTML content using BeautifulSoup
-soup = BeautifulSoup(html_content, 'lxml')
+# Initialize lists to hold the extracted data
+names = []
+addresses = []
 
-# Find all the terminal location elements
-terminals = soup.find_all('div', class_='TerminalMap_place_item__i7JSK')
+# Find all relevant sections containing the place information
+place_items = soup.find_all('div', class_='TerminalMap_place_item__i7JSK')
 
-# Prepare data for CSV
-data = []
-for terminal in terminals:
-    name = terminal.find('h3').text.strip()
-    address = terminal.find('p').text.strip()
-    data.append([name, address])
+# Loop through each place item and extract the name and address
+for item in place_items:
+    name = item.find('h3').text.strip()
+    address = item.find('p').text.strip()
+    names.append(name)
+    addresses.append(address)
 
-# Define CSV file path
-csv_file_path = 'terminal_locations.csv'
+# Create a DataFrame
+df = pd.DataFrame({
+    'Name': names,
+    'Address': addresses,
+})
 
-# Save data to CSV
-with open(csv_file_path, 'w', newline='', encoding='utf-8') as csvfile:
-    writer = csv.writer(csvfile)
-    writer.writerow(['Name', 'Address'])
-    writer.writerows(data)
+# Save the DataFrame to a CSV file
+df.to_csv('extracted_locations.csv', index=False)
 
-csv_file_path
-
-
+print("Location data extracted and saved to extracted_locations.csv")
