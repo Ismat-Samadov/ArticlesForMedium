@@ -57,7 +57,7 @@ for article in articles:
     locations.append(location_data)
 
 # Define CSV file name
-csv_file = 'locations_cleaned.csv'
+csv_file = 'bravo.csv'
 
 # Write data to CSV
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:

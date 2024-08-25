@@ -33,7 +33,7 @@ for store in stores:
     data.append([name, lat, lng, category, address, working_hours, phone])
 
 # Define the CSV file name
-csv_file = 'araz_locations.csv'
+csv_file = 'araz.csv'
 
 # Write the data to a CSV file
 with open(csv_file, 'w', newline='', encoding='utf-8') as file:

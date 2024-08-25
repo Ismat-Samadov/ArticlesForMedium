@@ -39,7 +39,7 @@ for item in files:
         data.append([name, address, lat, lng, location_type])
 
 # Define CSV file path
-csv_file_path = 'combined_terminal_locations.csv'
+csv_file_path = 'abb.csv'
 
 # Save data to CSV
 with open(csv_file_path, 'w', newline='', encoding='utf-8') as csvfile:

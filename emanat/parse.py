@@ -26,6 +26,6 @@ df = pd.DataFrame({
 })
 
 # Save the DataFrame to a CSV file
-df.to_csv('extracted_locations.csv', index=False)
+df.to_csv('emanat.csv', index=False)
 
 print("Location data extracted and saved to extracted_locations.csv")
