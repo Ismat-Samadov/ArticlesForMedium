@@ -1,4 +1,4 @@
-name,lat,lon,location_type,phone,address,working_hours,map_link
+Name,lat,lon,location_type,phone,address,working_hours,map_link
 Bravo Əhmədli,40.375065,49.944519,Hiper,+994 12 404 27 16,Ramiz Quliyev küçəsi 4,24/7,"https://www.google.com/maps/dir/?api=1&origin=&destination=40.375065,49.944519&travelmode=driver"
 Bravo Koroğlu m/s,40.418194,49.913635,Hiper,+994 12 404 09 89,Heydər Əliyev prospekti 172,24/7,"https://www.google.com/maps/dir/?api=1&origin=&destination=40.418194,49.913635&travelmode=driver"
 Bravo 20 Yanvar m/s,40.401619,49.811024,Hiper,+994 12 525 20 08,Tbilisi Prospekti 3007,24/7,"https://www.google.com/maps/dir/?api=1&origin=&destination=40.401619,49.811024&travelmode=driver"
