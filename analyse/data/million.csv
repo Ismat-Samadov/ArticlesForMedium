@@ -1,4 +1,4 @@
-id,address,longitude,latitude,regionId,regionName,terminalCode
+id,address,lon,lat,regionId,regionName,terminalCode
 127,Binəqədi r. 28 May qəs. Araz Bol market,49.6517649,40.4608028,411,Binəqədi rayonu,141
 1711,Binəqədi r. 28 May qəs. Baba market,49.650233,40.461459,411,Binəqədi rayonu,14048
 1191,Binəqədi r. 28 May qəs. İmrü market,49.631053,40.467201,411,Binəqədi rayonu,1878

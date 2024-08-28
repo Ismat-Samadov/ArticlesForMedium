@@ -1,4 +1,4 @@
-city_id,id,slug,is_nfc,cash_in,type,working_weekends,is_digital,lat,lng,work_hours_week,work_hours_saturday,work_hours_sunday,address,name,function
+city_id,id,slug,is_nfc,cash_in,type,working_weekends,is_digital,lat,lon,work_hours_week,work_hours_saturday,work_hours_sunday,address,name,function
 26,1010,ot-xirdalan-arazmarket4,0,0,A,0,0,40.45662,49.74158,,,,"Abşeron r., Xırdalan ş. M. Hüseynzadə küç,1-ci mərtəbə",ARAZ MARKET Xırdalan 4,payment_terminal
 1,1011,ot-bine-arazmarket1,0,0,A,0,0,40.45036,50.08906,,,,"Bakı ş.,Əzizbəyov rayonu Binə qəsəbəsi Ə.İsazadə kucəsi 5",ARAZ MARKET BİNƏ 1,payment_terminal
 1,1012,ot-bineqedi-arazmarket-bileceri,0,0,A,0,0,40.43625,49.80342,,,,"Bakı şəhəri Binəqədi r. Biləcəri qəs, Mehdi Hüseynzadə 17",ARAZ MARKET BİLƏCƏRİ,payment_terminal
